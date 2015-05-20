@@ -135,11 +135,12 @@
 
 
             <script>
-            window.onload = function()
-            {
-                //yourJSCodeHERE
+    $(document).ready(function() {
+      sendAJAX();
+      console.log('ready2!');
+    });
 
-            var xhr = new XMLHttpRequest();
+     var xhr = new XMLHttpRequest();
             xhr.onreadystatechange = function () {
                 if (xhr.readyState === 4) {
                     document.getElementById('ajax').innerHTML = xhr.responseText;
@@ -150,15 +151,13 @@
             xhr.send();
             document.getElementById('load').style.display = "none";
             }
-
-            };
             </script>
 
 
             <!-- for ajax request -->
             <div class="heading">
             
-            <div id "ajax"> 
+            <div id "ajax">
             <button id="load" onclick="sendAJAX()">Description!</button>
             </div>
             </div>
@@ -201,6 +200,9 @@
         interval: 5000 //changes the speed
     })
     </script>
+
+        <!-- jQuery -->
+     <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
 
 
     <!-- Script for the Kitten List -->
