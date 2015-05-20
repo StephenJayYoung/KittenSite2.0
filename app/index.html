@@ -18,19 +18,7 @@
     <script src="bower_components/modernizr/modernizr.js"></script>
     <!-- endbuild -->
 
-<script>
-var xhr = new XMLHttpRequest();
-xhr.onreadystatechange = function () {
-    if (xhr.readyState === 4) {
-        document.getElementById('ajax').innerHTML = xhr.responseText;
-    }
-};
-xhr.open('GET', '../sidebar.html');
-function sendAJAX(){
-xhr.send();
-document.getElementById('load').style.display = "none";
-}
-</script>
+
 
 <div class="container">
     <div class="row">
@@ -145,9 +133,34 @@ document.getElementById('load').style.display = "none";
           <div id="kitten-list" class="col-md-12">
           </div>
 
+
+            <script>
+            window.onload = function()
+            {
+                //yourJSCodeHERE
+
+            var xhr = new XMLHttpRequest();
+            xhr.onreadystatechange = function () {
+                if (xhr.readyState === 4) {
+                    document.getElementById('ajax').innerHTML = xhr.responseText;
+                }
+            };
+            xhr.open('GET', 'sidebar.html');
+            function sendAJAX(){
+            xhr.send();
+            document.getElementById('load').style.display = "none";
+            }
+
+            };
+            </script>
+
+
             <!-- for ajax request -->
+            <div class="heading">
+            
             <div id "ajax"> 
-            <button id="load" onclick="sendAJAX()">Description!</button>    
+            <button id="load" onclick="sendAJAX()">Description!</button>
+            </div>
             </div>
 
     <!-- build:js(.) scripts/vendor.js -->
