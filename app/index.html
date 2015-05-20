@@ -18,6 +18,15 @@
     <script src="bower_components/modernizr/modernizr.js"></script>
     <!-- endbuild -->
 
+<script>
+var xhr = new XMLHttpRequest();
+xhr.onreadystatechange = function () {
+    if (xhr.readyState === 4) {
+
+    }
+} ;
+</script>
+
 <div class="container">
     <div class="row">
         <div class="col-lg-12">
@@ -131,6 +140,8 @@
           <div id="kitten-list" class="col-md-12">
           </div>
 
+            <!-- for ajax request -->
+            <div id "ajax"> </div>
 
     <!-- build:js(.) scripts/vendor.js -->
     <!-- bower:js -->
