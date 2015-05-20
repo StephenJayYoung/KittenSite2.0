@@ -147,10 +147,11 @@ xhr.onreadystatechange = function () {
           <div id="kitten-list" class="col-md-12">
           </div>
 
+
             <!-- for ajax request -->
-            <div class="heading">
-                <button id="load" onclick="sendAJAX()">Description!</button>
-                    <div id "ajax">
+            <div class="container">
+                <button id="load" onclick="sendAJAX()">Show Description</button>
+                    <div id ="ajax">
                     </div>
             </div>
 </body>
@@ -248,4 +249,24 @@ xhr.onreadystatechange = function () {
       }
       console.log(initAnimals);
     </script>
+
+
+<script>
+    $(document).ready(function() {
+      sendAJAX();
+      console.log('ready2!');
+    });
+
+     var xhr = new XMLHttpRequest();
+            xhr.onreadystatechange = function () {
+                if (xhr.readyState === 4) {
+                    document.getElementById('ajax').innerHTML = xhr.responseText;
+                }
+            };
+            xhr.open('GET', 'sidebar.html');
+            function sendAJAX(){
+            xhr.send();
+            document.getElementById('load').style.display = "none";
+            }
+</script>
 </html>
