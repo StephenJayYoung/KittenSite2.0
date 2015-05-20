@@ -163,6 +163,24 @@
         <!-- build:js({app,.tmp}) scripts/main.js -->
         <script src="scripts/main.js"></script>
         <!-- endbuild -->
+
+        <!-- structure for form -->
+
+        <h2>Kitten for Adoption?</h2>
+
+        <form class="theForm" action="#">
+          <legend for="kitten">Add a Kitten</legend>
+          <input type="text" id="kitten"/>
+          <legend for="definition">Definition</legend>
+          <textarea name="description" id="description"></textarea>
+          <br>
+          <button id="addButton">Add word to dictionary</button>
+        </form>
+
+        <h2>Kitten List</h2>
+        <div id="kittenList"></div>
+
+
 </body>
     <!-- Script to Activate the Bootstrap Carousel -->
     <script>
