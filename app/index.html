@@ -2,7 +2,7 @@
 <html class="no-js">
   <head>
     <meta charset="utf-8">
-    <title>YoMann</title>
+    <title>Adopt-A-Cat</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width">
     <link rel="shortcut icon" href="/favicon.ico">
@@ -17,6 +17,9 @@
     <!-- build:js scripts/vendor/modernizr.js -->
     <script src="bower_components/modernizr/modernizr.js"></script>
     <!-- endbuild -->
+
+        <!-- jQuery -->
+     <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
 
 
 
@@ -69,9 +72,6 @@
   <!-- Bootstrap Carousel CSS -->
     <link rel="stylesheet" href="styles/half-slider.css" type="text/css" media="screen" />
 
-
-
-
   </head>
   <body>
     <!--[if lt IE 10]>
@@ -81,7 +81,7 @@
             <!-- Trying out the Bootstrap Carousel -->
 
     <!-- Half Page Image Background Carousel Header -->
-    <header id="myCarousel" class="carousel slide">
+    <div id="myCarousel" class="carousel slide">
         <!-- Indicators -->
         <ol class="carousel-indicators">
             <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
@@ -94,6 +94,7 @@
             <li data-target="#myCarousel" data-slide-to="7"></li>
             <li data-target="#myCarousel" data-slide-to="8"></li> -->
         </ol>
+<!--     </header> -->
 
         <!-- Wrapper for Slides -->
         <div class="carousel-inner">
@@ -120,7 +121,7 @@
             </div>
         </div>
 
-<br>
+
         <!-- Controls -->
         <a class="left carousel-control" href="#myCarousel" data-slide="prev">
             <span class="icon-prev"></span>
@@ -129,37 +130,21 @@
             <span class="icon-next"></span>
         </a>
 
+    </div>
+<br>
+
        <!-- Kitten List -->
           <div id="kitten-list" class="col-md-12">
           </div>
 
 
-            <script>
-    $(document).ready(function() {
-      sendAJAX();
-      console.log('ready2!');
-    });
-
-     var xhr = new XMLHttpRequest();
-            xhr.onreadystatechange = function () {
-                if (xhr.readyState === 4) {
-                    document.getElementById('ajax').innerHTML = xhr.responseText;
-                }
-            };
-            xhr.open('GET', 'sidebar.html');
-            function sendAJAX(){
-            xhr.send();
-            document.getElementById('load').style.display = "none";
-            }
-            </script>
 
 
             <!-- for ajax request -->
             <div class="heading">
-            
-            <div id "ajax">
-            <button id="load" onclick="sendAJAX()">Description!</button>
-            </div>
+                <button id="load" onclick="sendAJAX()">Description!</button>
+                    <div id "ajax">
+                    </div>
             </div>
 
     <!-- build:js(.) scripts/vendor.js -->
@@ -201,8 +186,6 @@
     })
     </script>
 
-        <!-- jQuery -->
-     <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
 
 
     <!-- Script for the Kitten List -->
