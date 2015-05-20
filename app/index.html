@@ -2,7 +2,7 @@
 <html class="no-js">
   <head>
     <meta charset="utf-8">
-    <title>YoMann</title>
+    <title>Adopt-A-Cat</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width">
     <link rel="shortcut icon" href="/favicon.ico">
@@ -18,15 +18,19 @@
     <script src="bower_components/modernizr/modernizr.js"></script>
     <!-- endbuild -->
 
-<div class="container">
-    <div class="row">
-        <div class="col-lg-12">
-            <div class="text-center brand">
-                <h1>Adopt-A-Cat!</h1>
+        <!-- jQuery -->
+     <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+
+
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="text-center brand">
+                    <h1>Adopt-A-Cat!</h1>
+                </div>
             </div>
         </div>
     </div>
-</div>
 
     <!-- Navigation -->
     <nav class="navbar navbar-default" role="navigation">
@@ -62,6 +66,7 @@
             <!-- /.navbar-collapse -->
         </div>
         <!-- /.container -->
+        </div>
     </nav>
 
   <!-- Bootstrap Carousel CSS -->
@@ -86,7 +91,7 @@ xhr.onreadystatechange = function () {
             <!-- Trying out the Bootstrap Carousel -->
 
     <!-- Half Page Image Background Carousel Header -->
-    <header id="myCarousel" class="carousel slide">
+    <div id="myCarousel" class="carousel slide">
         <!-- Indicators -->
         <ol class="carousel-indicators">
             <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
@@ -99,6 +104,7 @@ xhr.onreadystatechange = function () {
             <li data-target="#myCarousel" data-slide-to="7"></li>
             <li data-target="#myCarousel" data-slide-to="8"></li> -->
         </ol>
+<!--     </header> -->
 
         <!-- Wrapper for Slides -->
         <div class="carousel-inner">
@@ -125,7 +131,7 @@ xhr.onreadystatechange = function () {
             </div>
         </div>
 
-<br>
+
         <!-- Controls -->
         <a class="left carousel-control" href="#myCarousel" data-slide="prev">
             <span class="icon-prev"></span>
@@ -133,13 +139,30 @@ xhr.onreadystatechange = function () {
         <a class="right carousel-control" href="#myCarousel" data-slide="next">
             <span class="icon-next"></span>
         </a>
+    <!-- end carousel -->
+    </div>
+<br>
 
        <!-- Kitten List -->
           <div id="kitten-list" class="col-md-12">
           </div>
+<<<<<<< HEAD
         <!-- for  Ajax request -->
-        <div id="ajax"> 
+        <div id="ajax">
         </div>
+=======
+
+
+
+
+            <!-- for ajax request -->
+            <div class="heading">
+                <button id="load" onclick="sendAJAX()">Description!</button>
+                    <div id "ajax">
+                    </div>
+            </div>
+</body>
+>>>>>>> 272bfe7fdb8f395602b2afb94653ee769c994317
     <!-- build:js(.) scripts/vendor.js -->
     <!-- bower:js -->
     <script src="bower_components/jquery/dist/jquery.js"></script>
@@ -172,6 +195,7 @@ xhr.onreadystatechange = function () {
         <script src="scripts/main.js"></script>
         <!-- endbuild -->
 
+<<<<<<< HEAD
         <!-- structure for form -->
 
         <h2>Kitten for Adoption?</h2>
@@ -190,12 +214,14 @@ xhr.onreadystatechange = function () {
 
 
 </body>
+
     <!-- Script to Activate the Bootstrap Carousel -->
     <script>
     $('.carousel').carousel({
         interval: 5000 //changes the speed
     })
     </script>
+
 
 
     <!-- Script for the Kitten List -->
