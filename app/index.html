@@ -12,7 +12,7 @@
     <!-- endbower -->
     <!-- endbuild -->
     <!-- build:css(.tmp) styles/main.css -->
-    <link rel="stylesheet" href="styles/main.scss">
+    <link rel="stylesheet" href="styles/main.css">
     <!-- endbuild -->
     <!-- build:js scripts/vendor/modernizr.js -->
     <script src="bower_components/modernizr/modernizr.js"></script>
@@ -66,21 +66,11 @@
             <!-- /.navbar-collapse -->
         </div>
         <!-- /.container -->
-        </div>
+        </div>    
     </nav>
 
   <!-- Bootstrap Carousel CSS -->
     <link rel="stylesheet" href="styles/half-slider.css" type="text/css" media="screen" />
-<!-- script for running ajax -->
-<script>
-var xhr= new XMLHttpRequest();
-xhr.onreadystatechange = function () {
-    if (xhr.readyState ===4 {
-
-    }
-};
-</script>
-
 
   </head>
   <body>
@@ -89,39 +79,48 @@ xhr.onreadystatechange = function () {
     <![endif]-->
 
             <!-- Trying out the Bootstrap Carousel -->
-    <!-- Full Page Image Background Carousel Header -->
-    <header id="myCarousel" class="carousel slide">
+
+    <!-- Half Page Image Background Carousel Header -->
+    <div id="myCarousel" class="carousel slide">
         <!-- Indicators -->
         <ol class="carousel-indicators">
             <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
             <li data-target="#myCarousel" data-slide-to="1"></li>
             <li data-target="#myCarousel" data-slide-to="2"></li>
+<!--             <li data-target="#myCarousel" data-slide-to="3"></li>
+            <li data-target="#myCarousel" data-slide-to="4"></li>
+            <li data-target="#myCarousel" data-slide-to="5"></li>
+            <li data-target="#myCarousel" data-slide-to="6"></li>
+            <li data-target="#myCarousel" data-slide-to="7"></li>
+            <li data-target="#myCarousel" data-slide-to="8"></li> -->
         </ol>
+<!--     </header> -->
 
         <!-- Wrapper for Slides -->
         <div class="carousel-inner">
             <div class="item active">
                 <!-- Set the first background image using inline CSS below. -->
-                <div class="fill" style="background-image:url('http://placehold.it/1900x1080&text=Slide One');"></div>
+                <div class="fill" style="background-image:url('img/Kitten1.jpg');"></div>
                 <div class="carousel-caption">
-                   <!--  <h2>Caption 1</h2> -->
+                    <h2></h2>
                 </div>
             </div>
             <div class="item">
                 <!-- Set the second background image using inline CSS below. -->
-                <div class="fill" style="background-image:url('img/Kitten1.jpg');"></div>
+                <div class="fill" style="background-image:url('img/Kitten2.jpg');"></div>
                 <div class="carousel-caption">
-                   <!--  <h2>Caption 2</h2> -->
+                    <h2></h2>
                 </div>
             </div>
             <div class="item">
                 <!-- Set the third background image using inline CSS below. -->
-                <div class="fill" style="background-image:url('http://placehold.it/1900x1080&text=Slide Three');"></div>
+                <div class="fill" style="background-image:url('img/Kitten3.jpg');"></div>
                 <div class="carousel-caption">
-                 <!--    <h2>Caption 3</h2> -->
+                    <h2></h2>
                 </div>
             </div>
         </div>
+
 
         <!-- Controls -->
         <a class="left carousel-control" href="#myCarousel" data-slide="prev">
@@ -130,6 +129,8 @@ xhr.onreadystatechange = function () {
         <a class="right carousel-control" href="#myCarousel" data-slide="next">
             <span class="icon-next"></span>
         </a>
+    <!-- end carousel -->
+    </div>
 <br>
 
        <!-- Kitten List -->
@@ -139,15 +140,12 @@ xhr.onreadystatechange = function () {
 
 
             <!-- for ajax request -->
-            <div class="container">
-                <button id="load" onclick="sendAJAX()">Show Description</button>
-                    <div id ="ajax">
-                    </div>
+            <div class="heading">
+                <button id="load" onclick="sendAJAX()"></button>
+                    <div id ="ajax"> </div>
+                   
             </div>
-            <div></div>
 </body>
-
-
     <!-- build:js(.) scripts/vendor.js -->
     <!-- bower:js -->
     <script src="bower_components/jquery/dist/jquery.js"></script>
@@ -180,17 +178,14 @@ xhr.onreadystatechange = function () {
         <script src="scripts/main.js"></script>
         <!-- endbuild -->
 
-
-
-
-</body>
-
     <!-- Script to Activate the Bootstrap Carousel -->
     <script>
     $('.carousel').carousel({
         interval: 5000 //changes the speed
     })
     </script>
+
+
 
     <!-- Script for the Kitten List -->
 
