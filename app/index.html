@@ -12,7 +12,7 @@
     <!-- endbower -->
     <!-- endbuild -->
     <!-- build:css(.tmp) styles/main.css -->
-    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/main.scss">
     <!-- endbuild -->
     <!-- build:js scripts/vendor/modernizr.js -->
     <script src="bower_components/modernizr/modernizr.js"></script>
@@ -66,11 +66,21 @@
             <!-- /.navbar-collapse -->
         </div>
         <!-- /.container -->
-        </div>    
+        </div>
     </nav>
 
   <!-- Bootstrap Carousel CSS -->
     <link rel="stylesheet" href="styles/half-slider.css" type="text/css" media="screen" />
+<!-- script for running ajax -->
+<script>
+var xhr= new XMLHttpRequest();
+xhr.onreadystatechange = function () {
+    if (xhr.readyState ===4 {
+
+    }
+};
+</script>
+
 
   </head>
   <body>
@@ -142,11 +152,13 @@
             <!-- for ajax request -->
             <div class="container">
                 <button id="load" onclick="sendAJAX()">Show Description</button>
-                    <div id ="ajax"> 
+                    <div id ="ajax">
                     </div>
             </div>
             <div></div>
 </body>
+
+
     <!-- build:js(.) scripts/vendor.js -->
     <!-- bower:js -->
     <script src="bower_components/jquery/dist/jquery.js"></script>
@@ -178,6 +190,26 @@
         <!-- build:js({app,.tmp}) scripts/main.js -->
         <script src="scripts/main.js"></script>
         <!-- endbuild -->
+
+
+        <!-- structure for form -->
+
+        <h2>Kitten for Adoption?</h2>
+
+        <form class="theForm" action="#">
+          <legend for="kitten">Add a Kitten</legend>
+          <input type="text" id="kitten"/>
+          <legend for="description">Description</legend>
+          <textarea name="description" id="description"></textarea>
+          <br>
+          <button id="addButton">Add word to dictionary</button>
+        </form>
+
+        <h2>Kitten List</h2>
+        <div id="kittenList"></div>
+
+
+</body>
 
     <!-- Script to Activate the Bootstrap Carousel -->
     <script>
