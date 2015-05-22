@@ -9,10 +9,10 @@ body {
     height: 100%;
     font-family: "Open Sans","Helvetica Neue",Helvetica,Arial,sans-serif;
     background: url('http://images.cdn.bigcartel.com/bigcartel/product_images/129079977/max_h-1000+max_w-1000/Space_Confetti_tile_new_smaller.jpg') no-repeat center center fixed;
-/*    -webkit-background-size: cover;
+    -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
-    -o-background-size: cover;*/
+    -o-background-size: cover;
 }
 
 /* You can change the height of the carousel by changing the height in the class below. It is set to 50% by default, but can be any height! */

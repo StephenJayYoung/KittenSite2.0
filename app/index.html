@@ -89,48 +89,39 @@ xhr.onreadystatechange = function () {
     <![endif]-->
 
             <!-- Trying out the Bootstrap Carousel -->
-
-    <!-- Half Page Image Background Carousel Header -->
-    <div id="myCarousel" class="carousel slide">
+    <!-- Full Page Image Background Carousel Header -->
+    <header id="myCarousel" class="carousel slide">
         <!-- Indicators -->
         <ol class="carousel-indicators">
             <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
             <li data-target="#myCarousel" data-slide-to="1"></li>
             <li data-target="#myCarousel" data-slide-to="2"></li>
-<!--             <li data-target="#myCarousel" data-slide-to="3"></li>
-            <li data-target="#myCarousel" data-slide-to="4"></li>
-            <li data-target="#myCarousel" data-slide-to="5"></li>
-            <li data-target="#myCarousel" data-slide-to="6"></li>
-            <li data-target="#myCarousel" data-slide-to="7"></li>
-            <li data-target="#myCarousel" data-slide-to="8"></li> -->
         </ol>
-<!--     </header> -->
 
         <!-- Wrapper for Slides -->
         <div class="carousel-inner">
             <div class="item active">
                 <!-- Set the first background image using inline CSS below. -->
-                <div class="fill" style="background-image:url('img/Kitten1.jpg');"></div>
+                <div class="fill" style="background-image:url('http://placehold.it/1900x1080&text=Slide One');"></div>
                 <div class="carousel-caption">
-                    <h2></h2>
+                   <!--  <h2>Caption 1</h2> -->
                 </div>
             </div>
             <div class="item">
                 <!-- Set the second background image using inline CSS below. -->
-                <div class="fill" style="background-image:url('img/Kitten2.jpg');"></div>
+                <div class="fill" style="background-image:url('img/Kitten1.jpg');"></div>
                 <div class="carousel-caption">
-                    <h2></h2>
+                   <!--  <h2>Caption 2</h2> -->
                 </div>
             </div>
             <div class="item">
                 <!-- Set the third background image using inline CSS below. -->
-                <div class="fill" style="background-image:url('img/Kitten3.jpg');"></div>
+                <div class="fill" style="background-image:url('http://placehold.it/1900x1080&text=Slide Three');"></div>
                 <div class="carousel-caption">
-                    <h2></h2>
+                 <!--    <h2>Caption 3</h2> -->
                 </div>
             </div>
         </div>
-
 
         <!-- Controls -->
         <a class="left carousel-control" href="#myCarousel" data-slide="prev">
@@ -139,8 +130,6 @@ xhr.onreadystatechange = function () {
         <a class="right carousel-control" href="#myCarousel" data-slide="next">
             <span class="icon-next"></span>
         </a>
-    <!-- end carousel -->
-    </div>
 <br>
 
        <!-- Kitten List -->
@@ -192,21 +181,6 @@ xhr.onreadystatechange = function () {
         <!-- endbuild -->
 
 
-        <!-- structure for form -->
-
-        <h2>Kitten for Adoption?</h2>
-
-        <form class="theForm" action="#">
-          <legend for="kitten">Add a Kitten</legend>
-          <input type="text" id="kitten"/>
-          <legend for="description">Description</legend>
-          <textarea name="description" id="description"></textarea>
-          <br>
-          <button id="addButton">Add word to dictionary</button>
-        </form>
-
-        <h2>Kitten List</h2>
-        <div id="kittenList"></div>
 
 
 </body>
@@ -217,8 +191,6 @@ xhr.onreadystatechange = function () {
         interval: 5000 //changes the speed
     })
     </script>
-
-
 
     <!-- Script for the Kitten List -->
 
