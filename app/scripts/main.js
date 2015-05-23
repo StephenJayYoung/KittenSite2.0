@@ -1,8 +1,5 @@
 console.log('\'Allo \'Allo!');
 
-
-// script for the form //
-<script>
       $(document).ready( function(){
         displayList(getList());
         $("#addButton").click(addKitten);
@@ -47,4 +44,3 @@ console.log('\'Allo \'Allo!');
           ];
           return(defaultList);
       }
-    </script>
