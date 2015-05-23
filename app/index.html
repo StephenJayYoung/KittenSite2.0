@@ -137,14 +137,23 @@
           <div id="kitten-list" class="col-md-12">
           </div>
 
+        <!-- structure for form -->
 
+        <h2>Kitten for Adoption?</h2>
+
+        <form class="theForm" action="#">
+          <legend for="kitten">Add a Kitten</legend>
+          <input type="text" id="kitten"/>
+          <legend for="description">Description</legend>
+          <textarea name="description" id="description"></textarea>
+          <br>
+          <button id="addButton">Add word to dictionary</button>
+        </form>
 
             <!-- for ajax request -->
-            <div class="heading">
+<!--             <div class="heading">
                 <button id="load" onclick="sendAJAX()"></button>
-                    <div id ="ajax"> </div>
-                   
-            </div>
+            </div> -->
 </body>
     <!-- build:js(.) scripts/vendor.js -->
     <!-- bower:js -->
